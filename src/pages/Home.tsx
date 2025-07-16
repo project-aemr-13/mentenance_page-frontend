@@ -1,12 +1,24 @@
 import React from "react";
+import coffy from "../assets/Coffy_Text.svg";
 
 const Home: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-[60vh] text-center">
-      <h2 className="text-4xl font-bold mb-4 text-blue-600">Bine ai venit!</h2>
-      <p className="text-lg text-gray-700 max-w-xl">
-        Aceasta este pagina de start a aplicației tale. Folosește layout-ul global pentru navigare și structură.
-      </p>
+    <div className="relative flex justify-end items-center min-h-screen w-full">
+      <div className="w-[40%]">
+        <div className="text-[#000] text-[2.375rem] font-[400] leading-normal">
+          Website is Under
+        </div>
+        <div className="text-[#8C181B] text-[2.875rem] font-[700] leading-normal">
+          MAINTENANCE
+        </div>
+        <div className="text-[#000] text-[0.9375rem] not-italic font-normal leading-normal">
+          Our website is currently undergoing scheduled
+          <br /> maintenance. We should be back shortly.
+          <br />
+          Thank you for your patience.
+        </div>
+      </div>
+      <img className="absolute bottom-0 left-0 w-full" src={coffy} />
     </div>
   );
 };

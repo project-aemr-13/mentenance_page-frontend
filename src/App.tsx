@@ -2,7 +2,7 @@ import "./sass/index.scss";
 import { Routes, Route } from 'react-router-dom'
 import { AppLayout } from './layouts'
 import Home from './pages/Home'
-import NotFound from './pages/NotFound'
+// import NotFound from './pages/NotFound'
 
 function App() {
 
@@ -10,7 +10,7 @@ function App() {
     <Routes>
       <Route path="/" element={<AppLayout />}>
         <Route index element={<Home />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<Home />} />
       </Route>
     </Routes>
   )
