@@ -1,6 +1,6 @@
 import type { AxiosInstance } from "axios";
 import { getData, getUserToken, removeData, saveData } from "../utils/localStorage";
-import GenericApi from "./genericAPI";
+import GenericApi from "./genericApi";
 import type { AuthResponse } from "../types/Auth";
 import { authStorageUser } from "../config/constants/StorageKeys";
 import { ApiRoutes } from "../config/routes/ApiRoutes";
