@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/mentenance_page-frontend/',
+  // base: '/mentenance_page-frontend/',
   plugins: [react(),
     tailwindcss(),
   ],
